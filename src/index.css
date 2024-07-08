@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Mori;
+  src: url(./assets/PPMori-Regular.ttf);
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+}
+
+body {
+  font-family: Mori;
+  background-color: #111414;
+  color: white;
+}
+
+
+#specialtext {
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+
+button:hover i {
+  color: black;
+}
+
+.mf-cursor {
+  color: white !important;
+}
+
+.mf-cursor.-text {
+  color: rgb(79, 241, 79) !important;
+}
+
+@media (max-width:1000px) {
+  .mf-cursor {
+    display: none;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  background-color: rgba(79, 241, 79, .9);
+  color: white;
+}
